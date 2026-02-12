@@ -1,0 +1,195 @@
+/* ===========================
+   GLOBAL MATRIX STYLE
+=========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #00ff88;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+}
+
+a {
+    color: #00ff22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00ff00;
+    text-shadow: 2px 0 5px #00ff88;
+}
+
+strong {
+    color: #00ff44;
+}
+
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar {
+    background-color: #111;
+    padding: 40px 25px;
+    border-right: 1px solid #00ff88;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: #00cc77;
+}
+
+.sidebar nav {
+    margin-top: 40px;
+}
+
+.sidebar nav a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 2px solid #00ff88; */
+    border: 1px solid #003322;
+    margin: 20px auto;
+    display: block;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+    transition: 0.3s ease;
+}
+
+/* ===========================
+   CONTENT AREA
+=========================== */
+
+.content {
+    padding: 60px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 80px;
+}
+
+/* ===========================
+   SECTION STYLE
+=========================== */
+
+.section {
+    border: 1px solid #003322;
+    padding: 30px;
+    background: rgba(0, 255, 136, 0.03);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #00ff88;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===========================
+   MATRIX GRID BLOCKS
+=========================== */
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .matrix-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .matrix-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.matrix-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #004422;
+    padding: 20px;
+    background-color: rgba(0, 255, 136, 0.02);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgba(0, 255, 136, 0.08);
+    box-shadow: 0 0 8px #00ff88;
+}
+
+.preserve-lines {
+    white-space: pre-line;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    color: #007744;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #00ff88;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+}
