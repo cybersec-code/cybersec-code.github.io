@@ -26,7 +26,6 @@ strong {
     color: #00ff44;
 }
 
-
 /* ===========================
    MAIN CONTAINER
 =========================== */
@@ -48,6 +47,7 @@ strong {
     position: sticky;
     top: 0;
     height: 100vh;
+    text-align: center;
 }
 
 .sidebar h1 {
