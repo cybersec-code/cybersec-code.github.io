@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gibran Gomez | Cybersecurity Researcher</title>
+
+<style>
+
+/* ===========================
+   GLOBAL MATRIX STYLE
+=========================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #00ff88;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.6;
+}
+
+a {
+    color: #00ff22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00ff00;
+    text-shadow: 2px 0 5px #00ff88;
+}
+
+strong {
+    color: #00ff44;
+}
+
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar {
+    background-color: #111;
+    padding: 40px 25px;
+    border-right: 1px solid #00ff88;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: #00cc77;
+}
+
+.sidebar nav {
+    margin-top: 40px;
+}
+
+.sidebar nav a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ===========================
+   CONTENT AREA
+=========================== */
+
+.content {
+    padding: 60px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 80px;
+}
+
+/* ===========================
+   SECTION STYLE
+=========================== */
+
+.section {
+    border: 1px solid #003322;
+    padding: 30px;
+    background: rgba(0, 255, 136, 0.03);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #00ff88;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===========================
+   MATRIX GRID BLOCKS
+=========================== */
+
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .matrix-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .matrix-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.matrix-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #004422;
+    padding: 20px;
+    background-color: rgba(0, 255, 136, 0.02);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgba(0, 255, 136, 0.08);
+    box-shadow: 0 0 8px #00ff88;
+}
+
+.preserve-lines {
+    white-space: pre-line;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    color: #007744;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #00ff88;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h1>Gibran Gomez</h1>
+        <p>Cybersecurity Researcher</p>
+        <p>Threat Intelligence | Blockchain Analysis | Machine Learning</p>
+
+        <nav>
+            <a href="#about">> about me </a>
+            <a href="#career">> career path </a>
+            <a href="#publications">> publications</a>
+            <a href="#awards">> awards</a>
+            <a href="#education">> education</a>
+            <a href="#hobbies">> hobbies</a>
+        </nav>
+
+        <p style="margin-top:40px;">
+            GitHub: <br>
+            <a href="#">github.com/cybersec-code</a>
+        </p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- ABOUT ME -->
+        <div class="section" id="about">
+            <h2>About me</h2>
+            <p>
+                Gibran Gomez is a cybersecurity researcher, currently working at IMDEA Software Institute,
+                specializing in <strong>applying data science</strong> and <strong>threat intelligence</strong>
+                to contribute to solve <strong>blockchain-based attribution challenges</strong>.
+                His passion for understanding the exploitation of emerging technologies
+                has driven him to master a range of penetration testing security tools and programming languages.
+                With a robust understanding of operating systems, web platforms, and network protocols,
+                his expertise enables him to monitor, analyze, and extract <strong>key insights</strong>
+                from suspicious activity in the crypto ecosystem from a <strong>comprehensive cybersecurity perspective</strong>.
+                In his research, he has developed novel techniques to:
+            </p>
+            <ul>
+                <li>
+                    <strong>Trace cryptocurrency transactions</strong> (e.g., Bitcoin, Litecoin)
+                    and <strong>characterize addresses</strong> associated with malicious actors
+                    (e.g., ransomware, clippers, scams).
+                    Using backward Bitcoin transaction tracing,
+                    his team uncovered previously unknown economic connections between cybercriminals and third-party services
+                    (e.g., cryptocurrency exchanges);
+                    blockchain addresses used by malware for C&C server communication;
+                    and the <strong>complete set of BTC addresses</strong> DeadBolt used to receive ransom payments.
+                    His work has also <strong>enhanced the accuracy of revenue estimates</strong> in Bitcoin,
+                    allowing better analyses of cybercriminal groups.
+                </li>
+                <li>
+                    Collect <strong>actionable threat intelligence</strong> from public sources
+                    (e.g., blogs, social networks) using open protocols (e.g., RSS, platform APIs),
+                    <strong>improving cryptocurrency attribution data</strong> using verified sources
+                    (e.g., threat reports from major cybersecurity vendors),
+                    and contributing to more effective cybercrime investigations.
+                </li>
+                <li>
+                    Analyze the <strong>quality of reports</strong> in cryptocurrency-abuse reporting services
+                    at scale (e.g., BitcoinAbuse, ScamTracker), using large language models (e.g., ChatGPT, Llama)
+                    and other NLP models (e.g., BERT) to <strong>identify and mitigate data pollution</strong>,
+                    thereby improving data reliability and cybercrime analyses.
+                </li>
+            </ul>
+            <p>
+                During his research, he understood the <strong>impact and extent of cryptocurrency abuse on victims</strong>,
+                including the ways attackers exploit different services to perpetuate further abuse
+                (e.g., funds-recovery scams, phishing).
+                This insight showed him the urgent need for novel techniques to combat these emerging threats.
+            </p>
+
+            <div class="matrix-grid">
+                <div class="card">
+                    <strong>Core Expertise</strong>
+                    <p>Blockchain Abuse - Threat Intelligence - Data Science - Malware - Cybercrime - GNU/Linux - TLS</p>
+                </div>
+                <div class="card">
+                    <strong>Approach</strong>
+                    <p>Graph-based blockchain analysis - Supervised/Unsupervised ML - IOCs identification/extraction/classification - Process automation - Research-first.</p>
+                </div>
+                <div class="card">
+                    <strong>Philosophy</strong>
+                    <p>Investigo, ergo sum <strong>?B-)</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAREER PATH -->
+        <div class="section" id="career">
+            <h2>Career Path</h2>
+
+            <div class="matrix-row">
+                <div class="card">
+                    03/2025 – Current. Madrid, Spain.
+                    <strong>Postdoctoral Researcher – IMDEA Software Institute</strong>
+                    <ul>
+                        <li>
+                            Develop innovative techniques to identify and characterize threat groups
+                            (e.g., malware operators, scammers, cybercriminals) exploiting blockchain and other emerging technologies.
+                        </li>
+                        <li>
+                            Combine data science, cyber threat intelligence, and blockchain forensics
+                            to develop more effective detection and attribution methods.
+                        </li>
+                        <li>
+                            Design novel techniques to detect cryptocurrency services abused by cybercriminals,
+                            to enhance the overall cryptoeconomy landscape.
+                        </li>
+                    </ul>
+                    <p>
+                        Currently, he leads efforts on a platform designed to completely automate
+                        the collection, extraction, and classification of cryptocurrency addresses
+                        identified in threat reports and other online sources:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>TagZilla</strong>: Python library for categorizing IOCs in threat reports using LLMs.
+                            <strong>Author, Maintainer</strong>. Python (OpenAI's API, Pandas).
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    09/2019 – 02/2025. Madrid, Spain.
+                    <strong>Research Assistant – IMDEA Software Institute</strong>
+                    <p>
+                        As a Research Assistant in the Security and Privacy Research Group, he designed, developed, and maintained
+                        key software tools for research on blockchain abuse.
+                        His contributions spanned various platforms in different programming languages:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>WatchYourBack</strong>: Blockchain analysis platform for address labeling (double ownership), revenue estimation (removing redundancy), and attribution through transaction tracing.
+                            <strong>Author, Maintainer</strong>. Python (BlockSci, Scikit-learn, Pandas).
+                        </li>
+                        <li>
+                            <strong>ARC: Abuse Report Classifier</strong>: Python library for categorizing cryptocurrency abuse reports using OpenAI's LLMs and a novel cryptocurrency abuse taxonomy.
+                            <strong>Author, Maintainer</strong>. Python (OpenAI's API, Pandas).
+                            Collaboration: NEC Laboratories Europe. Online.
+                        </li>
+                        <li>
+                            <strong>GoodFATR</strong>: Threat-intelligence platform for identifying, extracting, and collecting IOCs from diverse sources (RSS, Twitter, Telegram).
+                            <strong>Author, Maintainer</strong>. Python (iocsearcher, selenium, feedparser, Twitter/Telegram APIs), Bash.
+                            Collaboration: Karlsruhe Institute of Technology. Online.
+                        </li>
+                        <li>
+                            <strong>iocsearcher</strong>: Python library for IOC extraction.
+                            <strong>Contributor</strong>. Python (beautifulsoup4, readabilipy, pdfminer, langdetect).
+                        </li>
+                        <li>
+                            <strong>graphsense-tagpacks</strong>: Platform for managing blockchain attribution tags (Contributor, ).
+                            <strong>Contributor</strong>. Python, SQL (PostgreSQL), Docker.
+                            Collaboration: Complexity Science Hub (CSH). Vienna, Austria.
+                        </li>
+                    </ul>
+                    <p>
+                        Gibran's research interests lie at the intersection of malware analysis, blockchain technologies, data science, and cybercrime.
+                        He has contributed to <strong>high-impact scientific publications</strong>, included in top-tier cybersecurity conferences
+                        such as <strong>CCS</strong> (ACM) and <strong>NDSS</strong> (The Internet Society), both A* in the ICORE ranking.
+                        He also has published in the journal FGCS (Elsevier), ranked Q1 in the JCR quartile rankings.
+                    </p>
+                    <p>
+                        His Ph.D. dissertation, titled "Techniques and Tools for Bitcoin Cybercrime Intelligence",
+                        was awarded the <strong>cum laude</strong> distinction.
+                    </p>
+                    <p>
+                        Throughout his academic career, he <strong>collaborated with leading security companies and research institutions</strong>,
+                        including <strong>Symantec</strong> (now Gen Digital Inc.), <strong>EURECOM</strong>, <strong>NEC Laboratories Europe</strong> (NECLabs),
+                        and the <strong>Complexity Science Hub</strong> (CSH).
+                        During a three-month visit to CSH, he contributed to the development and enhancement of Graphsense-Tagpacks.
+                    </p>
+                </div>
+
+                <div class="card">
+                    02/2019 – 08/2019. Madrid, Spain.
+                    <strong>Research Programmer – IMDEA Software Institute</strong>
+                    <p>
+                        As a research programmer, Gibran primarily collaborated with <strong>Symantec</strong> (now Gen Digital Inc.) and <strong>EURECOM</strong>
+                        to analyze and characterize malware families that abuse the <strong>TLS protocol</strong> to encrypt their network traffic.
+                        For this, he contributed to the design of a set of descriptive features derived from TLS traffic,
+                        the development of a feature extraction module based on network packets,
+                        and the final design and implementation of an unsupervised-based classifier for detecting and classifying malicious TLS traffic.
+                        Our classifier implements a <strong>novel clustering-based detection technique</strong>
+                        that leverages clusters known to belong to malware families as a reference point for detecting new families.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>TLSBro Project</strong>: Platform for detecting and classifying malicious TLS traffic based on novel unsupervised ML techniques.
+                            <strong>Contributor</strong>. Zeek (Bro), Python (FISHDBC, Scikit-learn, Pandas), SQL (MySQL), Bash.
+                            Collaboration: Symantec (now Gen), EURECOM. Online.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    08/2014 – 08/2017. San Cristobal de Las Casas, Mexico.
+                    <strong>Founder and Principal Consultant – Social Technology for Latin America (TES-LA.ORG)</strong>
+                    <p>
+                        TES-LA.org (Tecnología Social para Latino América) was a project founded to bring
+                        libre-software technologies and digital defense strategies to human rights defenders and journalists in southern Mexico,
+                        through workshops and digital trainings designed by Electronic Frontier Foundation (EFF) and Front Line Defenders (FLD),
+                        focusing on the adoption and use of digital defense tools and techniques and the use of libre-software.
+                        TES-LA facilitated training to 17 NGOs distributed in Mexico, Guatemala, El Salvador, Nicaragua, and Costa Rica
+                        through an online program for mutual collaboration during two years.
+                    </p>
+                    <p>
+                        TES-LA also provided IT consulting services to diverse NGOs,
+                        being responsible for the deployment, maintenance, and technical support of critical IT infrastructure,
+                        including local area networks, local systems and databases, email and hosting providers, and diverse web technologies.
+                        On March 19, 2016, he and collegues presented their experience in the LibrePlanet conference,
+                        organized by the Free Software Foundation and the Massachusetts Institute of Technology (MIT).
+                    </p>
+                    <p>
+                        TES-LA's main collaborations included:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Centro de Derechos Humanos Fray Bartolomé de Las Casas, A.C.</strong> IT Department Leader. 08/2014 – 08/2017.
+                        </li>
+                        <li>
+                            <strong>Servicio Internacional para la Paz, A.C.</strong> IT Department Leader. 08/2014 – 08/2017.
+                        </li>
+                        <li>
+                            <strong>Comisión de Apoyo a la Unidad y Reconciliación Comunitaria, A.C.</strong> Consultant. 08/2014 – 08/2017.
+                        </li>
+                        <li>
+                            <strong>Schools for Chiapas, A.C.</strong> Consultant. 08/2015 – 08/2017.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <strong>Software Developer and Consultant – Sistemas Humanos S.A. de C.V.</strong>: 10/2010 – 10/2014. Mexico City, Mexico.
+                    <p>
+                        As a Software Developer, Gibran contributed to diverse projects in different roles,
+                        from junior to senior positions and from back to front end development.
+                        He mainly worked with Java Enterprise Edition technologies
+                        like Glassfish, Hibernate, Spring, and ICEFaces for large-scale and robust software development,
+                        using different SQL-based DBMSs,
+                        like Oracle 11g, PostgreSQL, and MySQL.
+                        He also contributed to other projects using programming languages like
+                        Python, Groovy, JavaScript, and Bash.
+                        He frequently pushed code to repositories using Subversion and Git version control systems
+                        as part of the software development process, which followed the Scrum/Scrum-ban agile methodologies.
+                    </p>
+                    <p>
+                        As a senior full-stack developer, he contributed to fixing bugs and improving the source code of large software platforms.
+                        Two main projects he contributed to include:
+                    </p>
+                    <ul>
+                        <li>
+                                A platform for automating the evaluation of bachelor and postgraduate students, using as input OMR (Optical Mark Reader) answer sheets.
+                                This platform was used at the national level in Mexico by the National Center for Evaluation of Higher Education (CENEVAL, A.C).
+                                Contractor: Inteliglobe S.A. DE C.V.
+                        </li>
+                        <li>
+                                A set of telephone systems to manage, monitor, and bill the usage of telephone carrier users in the Central America region,
+                                with thousands of users distributed across several countries.
+                                Contractor: SICA S.A. de C.V.
+                        </li>
+                    </ul>
+                    <p>
+                        During his initial years, he also managed key IT infrastructure for the company,
+                        like Virtual Private Servers, hosting services, web platforms, and the Asterisk PBX server,
+                        using technologies like Telnet, SFTP, SSH, and Bash.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PUBLICATIONS -->
+        <div class="section" id="publications">
+            <h2>Publications</h2>
+
+            <div class="matrix-grid">
+
+                <div class="card">
+		    <a href="https://doi.org/10.1016/j.future.2025.108313"> Clean Up the Mess: Addressing Data Pollution in Cryptocurrency Abuse Reporting Services</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez, Kevin van Liebergen, Davide Sanvito, Giuseppe Siracusano, Roberto González, Juan Caballero.
+                        Clean Up the Mess: Addressing Data Pollution in Cryptocurrency Abuse Reporting Services.
+                        In: Future Generation Computer Systems (FGCS), JCR Q1. Volume 179, June 2026.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="http://dx.doi.org/10.14722/ndss.2025.241887">All your (data)base are belong to us: Characterizing Database Ransom(ware) Attacks</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Kevin van Liebergen, Gibran Gomez, Srdjan Matic, Juan Caballero.
+                        All your (data)base are belong to us: Characterizing Database Ransom(ware) Attacks.
+                        In: Proceedings of the 2025 Network and Distributed Systems Security Symposium (NDSS'25), CORE A*. February 24, 2025.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://doi.org/10.1145/3576915.3623094">Cybercrime Bitcoin Revenue Estimations: Quantifying the Impact of Methodology and Coverage</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez, Kevin van Liebergen, Juan Caballero.
+                        Cybercrime Bitcoin Revenue Estimations: Quantifying the Impact of Methodology and Coverage.
+                        In: Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security (CCS'23), CORE A*. November 21, 2023.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://doi.org/10.1016/j.future.2023.02.012">The Rise of GoodFATR: A Novel Accuracy Comparison Methodology for Indicator Extraction Tools</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Juan Caballero, Gibran Gomez, Srdjan Matic, Gustavo Sánchez, Silvia Sebastián, Arturo Villacañas.
+                        The Rise of GoodFATR: A Novel Accuracy Comparison Methodology for Indicator Extraction Tools.
+                        In: Future Generation Computer Systems (FGCS), JCR Q1. Volume 144, July 2023.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://doi.org/10.1155/2023/3676692">Unsupervised Detection and Clustering of Malicious TLS Flows</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez, Platon Kotzias, Matteo Dell’amico, Leyla Bilge, Juan Caballero.
+                        Unsupervised Detection and Clustering of Malicious TLS Flows.
+                        In: Security and Communication Networks. January 12, 2023.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://doi.org/10.1145/3548606.3560587">Watch Your Back: Identifying Cybercrime Financial Relationships in Bitcoin through Back-and-Forth Exploration</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez, Pedro Moreno-Sánchez, Juan Caballero.
+                        Watch Your Back: Identifying Cybercrime Financial Relationships in Bitcoin through Back-and-Forth Exploration.
+                        In: Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security (CCS'22), CORE A*. November 7, 2022.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://doi.org/10.20868/UPM.thesis.86778">Techniques and Tools for Bitcoin Cybercrime Intelligence</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez.
+                        Techniques and Tools for Bitcoin Cybercrime Intelligence. PhD thesis. February 2025.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://oa.upm.es/52286/">Detecting and Classifying Malicious TLS Network Traffic Using Machine Learning</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez.
+                        Detecting and Classifying Malicious TLS Network Traffic Using Machine Learning. Master thesis. July 2018.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=10230076">(Work-in-progress) Measuring Data Pollution in Cryptocurrency Abuse Reporting Services</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Gibran Gomez, Kevin van Liebergen, Davide Sanvito, Giuseppe Siracusano, Roberto Gonzalez, Juan Caballero.
+                        (Work-in-progress) Measuring Data Pollution in Cryptocurrency Abuse Reporting Services.
+                        In: X Jornadas Nacionales de Investigación en Ciberseguridad (JNIC'25). June 6, 2025.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://idus.us.es/handle/11441/159596">(Work in Progress): Clustering-Based Characterization of Database Server Ransom Scams</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Kevin van Liebergen, Gibran Gomez, Srdjan Matic, Juan Caballero.
+                        (Work in Progress): Clustering-Based Characterization of Database Server Ransom Scams.
+                        In: XIX Jornadas Nacionales de Investigación en Ciberseguridad (JNIC'24). June 3, 2024.
+                        </span>
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9206603">(Work in Progress) FATR: a Framework for Automated Analysis of Threat Reports</a>
+                    <p>
+                        <span class="preserve-lines">
+                        Juan Caballero, Gibran Gomez, Srdjan Matic, Gustavo Sánchez, Silvia Sebastián, Arturo Villacañas.
+                        (Work in Progress) FATR: a Framework for Automated Analysis of Threat Reports.
+                        In: VII Jornadas Nacionales de Investigación en Ciberseguridad (JNIC'23). June 29, 2022.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AWARDS -->
+        <div class="section" id="awards">
+            <h2>Honours and Awards</h2>
+
+            <div class="matrix-grid">
+                <div class="card">
+                    <p class="preserve-lines">
+                        11/02/2025
+                        <strong>Cum Laude</strong> – Technical University of Madrid (UPM)
+                    </p>
+                    <p class="preserve-lines">
+                        Graduated with honors from Technical University of Madrid (UPM).
+                        Ph.D. in Software, Systems, and Computing.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="preserve-lines">
+                        05/06/2025
+                        <strong>Best "Work in Progress" award</strong> – Spanish National Cybersecurity Institute (INCIBE)
+                    </p>
+                    <p class="preserve-lines">
+                        (Work-in-progress) Measuring Data Pollution in Cryptocurrency Abuse Reporting Services.
+                        In: JNIC'25.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="preserve-lines">
+                        29/06/2022
+                        <strong>Best "Work in Progress" award</strong> – Spanish National Cybersecurity Institute (INCIBE)
+                    </p>
+                    <p class="preserve-lines">
+                        (Work in Progress) FATR: a Framework for Automated Analysis of Threat Reports.
+                        In: JNIC'22.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="preserve-lines">
+                        01/10/2020
+                        <strong>Grant for Predoctoral Contracts</strong> (FPI scholarship) – Spanish Ministry of Science and Innovation
+                    </p>
+                    <p class="preserve-lines">
+                        Project: SCUM: Securing Untrusted Machines.
+                        Ref. RTI2018-102043-B-I00/PRE2019-088472.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="preserve-lines">
+                        17/09/2018
+                        <strong>MSc. Thesis with Honours</strong> – Technical University of Madrid (UPM)
+                    </p>
+                    <p class="preserve-lines">
+                        Graduated with honours from Technical University of Madrid (UPM).
+                        Master in Software and Systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section" id="education">
+            <h2>Education</h2>
+
+            <div class="matrix-grid">
+                <div class="card">
+                    <a href="https://dssc.fi.upm.es">Ph.D. In Software, Systems, and Computing</a>.
+                    <p>
+                    Technical University of Madrid (UPM).
+                    28/08/2019 – 11/02/2025 Madrid, Spain.
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="https://muss.fi.upm.es">Master in Software and Systems</a>.
+                    <p>
+                    Technical University of Madrid (UPM).
+                    11/09/2017 – 24/07/2018 Madrid, Spain.
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="http://www.utm.mx">Computer Engineering</a>.
+                    <p>
+                    Technological University of the Mixteca (UTM).
+                    15/09/2004 – 26/07/2009 Huajuapan de Leon, Mexico.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HOBBIES -->
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+
+            <div class="matrix-grid">
+                <div class="card">
+                    <strong>LLM Prompting</strong>
+                    <p>Stressing LLMs just for fun :)</p>
+                </div>
+
+                <div class="card">
+                    <strong>CTFs</strong>
+		    <p>Offensive challenges and red-team simulations with the peeps }:)</p>
+                </div>
+
+                <div class="card">
+                    <strong>Travels</strong>
+                    <p>Not exclusively for presenting in conferences \m/_</p>
+                </div>
+
+                <div class="card">
+                    <strong>Dance & Music</strong>
+		    <p>Swing and shag and fun around :3</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    🄯 2026 Gibran Gomez | Built with love <3
+</footer>
+
+</body>
+</html>
+
