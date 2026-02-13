@@ -47,6 +47,7 @@ strong {
     position: sticky;
     top: 0;
     align-self: start;
+    height: 100vh;
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
