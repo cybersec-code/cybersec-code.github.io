@@ -50,22 +50,6 @@ strong {
     text-align: center;
 }
 
-/* Tablet */
-@media (max-width: 1100px) {
-    .sidebar {
-    	position: relative;
-        height: auto;
-    }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-    .sidebar {
-    	position: relative;
-        height: auto;
-    }
-}
-
 .sidebar h1 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -144,20 +128,6 @@ strong {
     gap: 20px;
 }
 
-/* Tablet */
-@media (max-width: 1100px) {
-    .matrix-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-    .matrix-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .matrix-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -195,17 +165,112 @@ footer {
    RESPONSIVE
 =========================== */
 
-@media (max-width: 900px) {
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stack sidebar + content */
     }
 
     .sidebar {
+        position: relative; /* Disable sticky */
+        height: auto;
         border-right: none;
         border-bottom: 1px solid #00ff88;
+        padding: 30px 20px;
     }
 
     .content {
-        padding: 40px 20px;
+        padding: 40px;
+        gap: 60px;
+    }
+
+    .matrix-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }
 }
+
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        padding: 25px 15px;
+    }
+
+    .sidebar h1 {
+        font-size: 18px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebar nav a {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 25px 15px;
+        gap: 40px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .matrix-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 11px;
+        padding: 20px;
+    }
+}
+
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .matrix-grid {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+}
+
